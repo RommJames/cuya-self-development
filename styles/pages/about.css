@@ -1,0 +1,103 @@
+main {
+  padding: 65px 17rem 0 17em;
+  background-color: #f7f6f3;
+}
+
+section {
+  padding: 25px;
+}
+/* who I am section */
+.who-i-am-description {
+  background-color: white;
+  padding: 30px;
+  margin: 35px 0px 0px 0px;
+  border-radius: 15px;
+  border: 1px solid #e3d3d3;
+}
+
+.who-i-am-description h2,
+.my-story h2,
+.what-drives-me h2 {
+  font-size: 1.8rem;
+  margin-bottom: 15px;
+}
+
+/* milestone */
+.milestone {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  text-align: center;
+  justify-content: space-between;
+}
+
+.milestone .core-value-card-icon {
+  display: flex;
+  justify-content: center;
+}
+
+.milestone .core-value-card {
+  width: 200px;
+  text-align: center;
+  padding: 20px;
+}
+
+/* my story */
+.my-story {
+  padding: 30px;
+  border-radius: 15px;
+}
+
+.my-story-description {
+  background-color: #f7f0e0;
+  padding: 35px;
+  border-radius: 15px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.what-drives-me-description {
+  background-color: white;
+  padding: 30px;
+  border-radius: 15px;
+}
+
+.what-drives-me-cards {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 15px;
+}
+
+.what-drives-me-card {
+  background-color: #f5f3ef;
+  width: 420px;
+  border-radius: 15px;
+  padding: 30px;
+}
+
+.what-drives-me-card p {
+  padding: 15px 0px;
+}
+
+.what-drives-me-card:hover {
+  background-color: #ebe8e0;
+}
+
+/* my-quote */
+.my-quote-content {
+  background-color: #46484b;
+  color: #f7f6f3;
+  border-radius: 15px;
+  text-align: center;
+  padding: 25px;
+}
+
+.my-quote-content h1 {
+  font-weight: 400;
+  letter-spacing: 3px;
+}
+
+.my-quote-content p {
+  font-weight: 300;
+  color: #d7d5d0;
+}
