@@ -180,3 +180,62 @@ body {
     transform: translateY(0);
   }
 }
+
+/* ==============================
+   RESPONSIVE BREAKPOINTS
+   ============================== */
+
+/* Tablets */
+@media (max-width: 900px) {
+  .logo-glow {
+    width: 100px;
+  }
+  .typewriter h1 span {
+    font-size: 2.5rem;
+  }
+  .subtext {
+    font-size: 1rem;
+    margin: 10px 0;
+  }
+  #enter-btn {
+    font-size: 1rem;
+    padding: 12px 36px;
+  }
+}
+
+/* Mobile Large */
+@media (max-width: 600px) {
+  .logo-glow {
+    width: 80px;
+  }
+  .typewriter h1 span {
+    font-size: 2rem;
+  }
+  .subtext {
+    font-size: 0.95rem;
+  }
+  #enter-btn {
+    font-size: 0.95rem;
+    padding: 10px 30px;
+  }
+  .loader-container {
+    width: 95%;
+  }
+}
+
+/* Mobile Small */
+@media (max-width: 400px) {
+  .logo-glow {
+    width: 70px;
+  }
+  .typewriter h1 span {
+    font-size: 1.6rem;
+  }
+  .subtext {
+    font-size: 0.85rem;
+  }
+  #enter-btn {
+    font-size: 0.85rem;
+    padding: 8px 25px;
+  }
+}

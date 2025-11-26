@@ -1,24 +1,311 @@
-/* Featured Card */
+/* -----------------------------
+   GLOBAL RESPONSIVE ADJUSTMENTS
+------------------------------ */
 
-@media (max-width: 768px) {
-  .featured-cards-container {
+/* Keep padding consistent on small screens */
+section {
+  padding: 35px 20px;
+}
+
+/* Fix overscaling on small screens */
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* -----------------------------
+   NAVIGATION (Mobile Version)
+------------------------------ */
+
+@media (max-width: 850px) {
+  nav {
+    height: auto;
+    padding: 10px 20px;
+  }
+
+  .navbar {
+    justify-content: space-between;
+  }
+
+  /* Hide nav links initially */
+  .nav-links {
+    position: absolute;
+    top: 60px;
+    left: 0;
+    width: 100%;
+    background: white;
     flex-direction: column;
-    align-items: center;
+    display: none;
+    padding: 15px 0;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  }
+
+  .nav-links li {
+    width: 100%;
+    text-align: center;
+  }
+
+  /* HAMBURGER BUTTON */
+  .hamburger {
+    display: block;
+    cursor: pointer;
+    padding: 10px;
+  }
+
+  .hamburger div {
+    width: 28px;
+    height: 3px;
+    background: #333;
+    margin: 5px 0;
+    border-radius: 5px;
+    transition: 0.3s;
+  }
+
+  /* Show menu when toggled */
+  .nav-active {
+    display: flex !important;
   }
 }
 
-/* Footer */
+/* Hidden hamburger for desktop */
+.hamburger {
+  display: none;
+}
 
+/* -----------------------------
+    HERO BANNER
+------------------------------ */
 @media (max-width: 768px) {
-  footer {
-    padding: 40px 50px;
+  .hero-banner-content {
+    padding: 0 20px;
+    text-align: center;
+    background-attachment: scroll;
   }
-  .footer-main {
+
+  .hero-title {
+    padding: 15px;
+    border-width: 6px;
+  }
+
+  .hero-title h1 {
+    font-size: 1.7rem;
+  }
+
+  .hero-tags {
+    gap: 10px;
+  }
+
+  .tag {
+    padding: 5px 15px;
+    font-size: 0.85rem;
+  }
+
+  .my-floating-face {
+    height: 150px;
+  }
+}
+
+/* -----------------------------
+    CORE VALUES
+------------------------------ */
+@media (max-width: 900px) {
+  .core-value-cards {
     flex-direction: column;
-    align-items: center;
+    gap: 25px;
+  }
+
+  .core-value-card {
+    width: 90%;
+    max-width: 350px;
+    height: auto;
+  }
+}
+
+/* -----------------------------
+    FEATURED CARDS
+------------------------------ */
+@media (max-width: 900px) {
+  .featured-card {
+    width: 90%;
+    max-width: 400px;
+    height: auto;
+  }
+
+  .card-caption {
+    -webkit-line-clamp: 5;
+  }
+}
+
+@media (max-width: 500px) {
+  .card-title {
+    font-size: 1.1rem;
+  }
+
+  .card-tech span {
+    font-size: 0.75rem;
+  }
+}
+
+/* -----------------------------
+    SKILLS SECTION
+------------------------------ */
+@media (max-width: 768px) {
+  .skills-icons {
+    gap: 1.2rem;
+  }
+
+  .skills img {
+    width: 45px;
+    height: 45px;
+  }
+}
+
+/* -----------------------------
+    EXPLORE JOURNEY BUTTON
+------------------------------ */
+@media (max-width: 600px) {
+  .btn a {
+    min-width: 200px;
+    min-height: 45px;
+    font-size: 0.9rem;
+  }
+}
+
+/* -----------------------------
+    FOOTER
+------------------------------ */
+@media (max-width: 900px) {
+  footer {
+    padding: 40px 30px;
     text-align: center;
   }
+
+  .footer-main {
+    flex-direction: column;
+    text-align: center;
+  }
+
   .footer-main .links {
     justify-content: center;
+  }
+}
+
+/* -----------------------------
+    PDF VIEWER RESPONSIVE
+------------------------------ */
+@media (max-width: 900px) {
+  .pdf-container {
+    height: 70vh;
+  }
+}
+
+@media (max-width: 600px) {
+  .pdf-container {
+    height: 60vh;
+  }
+}
+
+/* -----------------------------
+    HOBBIES SECTION
+------------------------------ */
+@media (max-width: 900px) {
+  .hobbies-cards {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media (max-width: 600px) {
+  .hobbies-cards {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* ===========================
+   MOBILE NAVIGATION 
+   =========================== */
+@media (max-width: 900px) {
+  nav {
+    position: relative;
+  }
+
+  /* Convert nav container */
+  .navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  /* Hide dropdowns unless tapped */
+  .dropdown {
+    display: none !important;
+    position: static;
+    box-shadow: none;
+    background: none;
+    padding: 0;
+  }
+
+  /* -----------------------
+     COLLAPSE NAV LINKS
+     ----------------------- */
+  .nav-links {
+    position: absolute;
+    top: 100%;
+    right: 0;
+    width: 100%;
+    flex-direction: column;
+    align-items: flex-start;
+    background: white;
+    gap: 0;
+    padding: 10px 0;
+    display: none; /* hide on mobile */
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+    z-index: 999;
+  }
+
+  .nav-links li {
+    width: 100%;
+    padding: 12px 20px;
+  }
+
+  .nav-links a {
+    width: 100%;
+    display: block;
+    padding: 10px 0;
+    font-size: 1.1rem;
+  }
+
+  /* -----------------------
+     TAP-TO-OPEN MENU AREA
+     ----------------------- */
+  .navbar::after {
+    content: "\2630"; /* ☰ icon */
+    font-size: 28px;
+    cursor: pointer;
+    padding: 10px;
+  }
+
+  /* -----------------------
+     CHECKBOX-FREE TOGGLE METHOD
+     When navbar is tapped, show menu
+     ----------------------- */
+  nav:focus-within .nav-links,
+  .navbar:active + .nav-links,
+  .nav-links:hover {
+    display: flex !important;
+  }
+
+  /* -----------------------
+     SHOW DROPDOWN NESTED ITEMS
+     ----------------------- */
+  .nav-links li:hover .dropdown {
+    display: flex !important;
+    flex-direction: column;
+    padding-left: 20px;
+    gap: 10px;
+  }
+
+  .dropdown a {
+    font-size: 0.95rem;
+    padding: 8px 0;
   }
 }
