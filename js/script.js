@@ -24,3 +24,8 @@ if (hero) {
 
 // FOOTER YEAR
 document.getElementById("year").textContent = new Date().getFullYear();
+
+// Navbar
+document.querySelector("nav").addEventListener("click", () => {
+  document.body.classList.toggle("nav-open");
+});
