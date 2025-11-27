@@ -1028,3 +1028,12 @@ footer .copyright {
 .back-btn a:hover {
   background: #cf932f;
 }
+
+/* my story section */
+.my-story p {
+  margin: 25px 0px;
+}
+
+.my-story p:hover {
+  text-shadow: 0 0 5px #7f7d75, 0 0 5px #d7d7c1, 0 0 5px #f4f4f4;
+}
